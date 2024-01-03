@@ -11,14 +11,16 @@ export default function Home() {
   }
   return (
     <main>
-      <h1>Events, functions and state {name}</h1>
+      {/* <h1>Events, functions and state {name}</h1>
       <br />
       <Link href='/login'>Go to Login page</Link>
       <br />
       <Link href='/about'>Go to About page</Link>
       <div>Hello </div>
       <button onClick={() => navigate('login')}>Go To Login</button>
-      <button onClick={() => navigate('about')}>Go To About</button>
+      <button onClick={() => navigate('about')}>Go To About</button> */}
+      <Link href='/productlist'>Go to Product List</Link>
+
     </main>
   )
 }
