@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import style from './style.module.css'
 
+import Image from 'next/image';
+import Profile from './../../public/vercel.svg'
+
 export default function Home() {
   const router = useRouter();
   const navigate = (route) => {
@@ -24,6 +27,14 @@ export default function Home() {
       {/* <h1>Style and CSS with Next js</h1>
       <h2>Style and CSS with Next js</h2> */}
       <h1>Condition with style</h1>
+      {/* <Image
+        src={Profile}
+      /> */}
+      <Image
+        src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg"
+        height={400}
+        width={600}
+      />
 
     </main>
   )
