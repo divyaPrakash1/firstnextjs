@@ -3,17 +3,17 @@ import { useState } from 'react';
 import styles from './page.module.css'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import style from './style.module.css'
+// import style from './style.module.css'
 
-import Image from 'next/image';
-import Profile from './../../public/vercel.svg';
-import { Roboto } from 'next/font/google';
+// import Image from 'next/image';
+// import Profile from './../../public/vercel.svg';
+// import { Roboto } from 'next/font/google';
 
-const roboto = Roboto({
-  weight: '100',
-  subsets: ['latin'],
-  display: 'swap'
-})
+// const roboto = Roboto({
+//   weight: '100',
+//   subsets: ['latin'],
+//   display: 'swap'
+// })
 
 export default function Home() {
   const router = useRouter();
@@ -45,7 +45,7 @@ export default function Home() {
 
       {/* <h1 className={roboto.className}>Font with </h1> */}
 
-      <h1>Meta data implementation in Nextjs </h1>
+      {/* <h1>Meta data implementation in Nextjs </h1> */}
 
     </main>
   )
