@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import './style.css'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,10 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
       </head> */}
+      <head>
+        <link rel='stylesheet' href='./../../public/style.css' />
+        <Script src='./../../public/common.js' />
+      </head>
       <body className={inter.className}>
         {children}
       </body>
