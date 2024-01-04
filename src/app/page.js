@@ -6,7 +6,14 @@ import { useRouter } from 'next/navigation';
 import style from './style.module.css'
 
 import Image from 'next/image';
-import Profile from './../../public/vercel.svg'
+import Profile from './../../public/vercel.svg';
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({
+  weight: '100',
+  subsets: ['latin'],
+  display: 'swap'
+})
 
 export default function Home() {
   const router = useRouter();
@@ -26,15 +33,17 @@ export default function Home() {
       {/* <Link href='/productlist'>Go to Product List</Link> */}
       {/* <h1>Style and CSS with Next js</h1>
       <h2>Style and CSS with Next js</h2> */}
-      <h1>Condition with style</h1>
+      {/* <h1 style={{ fontFamily: 'Roboto', fontWeight: 200 }}>Condition with style</h1> */}
       {/* <Image
         src={Profile}
       /> */}
-      <Image
+      {/* <Image
         src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg"
         height={400}
         width={600}
-      />
+      /> */}
+
+      <h1 className={roboto.className}>Font with </h1>
 
     </main>
   )
