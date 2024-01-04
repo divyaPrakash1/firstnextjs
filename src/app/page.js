@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from './page.module.css'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import style from './style.module.css'
 
 export default function Home() {
   const router = useRouter();
@@ -20,8 +21,9 @@ export default function Home() {
       <button onClick={() => navigate('login')}>Go To Login</button>
       <button onClick={() => navigate('about')}>Go To About</button> */}
       {/* <Link href='/productlist'>Go to Product List</Link> */}
-      <h1>Style and CSS with Next js</h1>
-      <h2>Style and CSS with Next js</h2>
+      {/* <h1>Style and CSS with Next js</h1>
+      <h2>Style and CSS with Next js</h2> */}
+      <h1>Condition with style</h1>
 
     </main>
   )

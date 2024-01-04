@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export default function MiddleWare(request) {
     console.log('midffffdleware');
     // if (request.nextUrl.pathname != '/login') {
-    return NextResponse.redirect(new URL("/login", request.url))
+    // return NextResponse.redirect(new URL("/login", request.url))
     // }
 }
 
