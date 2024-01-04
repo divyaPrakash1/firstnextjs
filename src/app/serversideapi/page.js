@@ -11,8 +11,8 @@ export default async function Page() {
     return (
         <div>
             <h1>Product List</h1>
-            {products && products.map((product) => (
-                <div>
+            {products && products.map((product, index) => (
+                <div key={index}>
                     <h4>{product.name}</h4>
                     <Product price={product.basePrice} />
                 </div>

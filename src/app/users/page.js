@@ -10,8 +10,8 @@ export default async function Page() {
     return (
         <div>
             <h1>Product Name list</h1>
-            {products && products.length > 0 && products.map((product) => (
-                <div>
+            {products && products.length > 0 && products.map((product, index) => (
+                <div key={index}>
                     <h2> Product Name : {product.name} </h2>
                 </div>
             ))}
