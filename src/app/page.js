@@ -43,7 +43,9 @@ export default function Home() {
         width={600}
       /> */}
 
-      <h1 className={roboto.className}>Font with </h1>
+      {/* <h1 className={roboto.className}>Font with </h1> */}
+
+      <h1>Meta data implementation in Nextjs </h1>
 
     </main>
   )
